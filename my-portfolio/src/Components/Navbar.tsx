@@ -1,11 +1,12 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Button } from 'react-bootstrap';
 
-function Navigation (){
+
+
+function NavigationBar (){
     return(
-        <Navbar>
-            <Nav.Link className="title" href="#home">Home</Nav.Link>
-        </Navbar>
+        <div>
+            <Button>Button</Button>
+        </div>
     )
 }
-export default Navigation
+export default NavigationBar
