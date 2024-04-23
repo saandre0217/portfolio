@@ -13,6 +13,8 @@
   font-family: "primary-font-bold";
   src: url("../public/Vonique\ 64\ Bold.ttf")
 }
+
+
 .App {
   text-align: center;
 }
@@ -42,10 +44,17 @@
   font-size: calc(5rem + 2vmin);
   margin: 1rem;
 }
+
 .App-link {
   color: var(--accent);
 }
 
+.standard-marg-left {
+  margin-left: 1rem;
+}
+.standard-marg-right {
+  margin-right: 1rem;
+}
 .custom-row {
   display: flex;
   flex-direction: row;
