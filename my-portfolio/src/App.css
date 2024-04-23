@@ -1,0 +1,57 @@
+:root {
+  --primary: #025072;
+  --neutral: #F1EDE6;
+  --accent: #E2AEDD;
+  --purple: #6A0136;
+  --green: #539987;
+}
+@font-face {
+  font-family: "primary-font";
+  src: url("../public/Vonique\ 64.ttf")
+}
+@font-face {
+  font-family: "primary-font-bold";
+  src: url("../public/Vonique\ 64\ Bold.ttf")
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: var(--neutral);
+  font-family: "primary-font-bold";
+}
+
+.title {
+  font-size: calc(5rem + 2vmin);
+  margin: 1rem;
+}
+.App-link {
+  color: var(--accent);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
