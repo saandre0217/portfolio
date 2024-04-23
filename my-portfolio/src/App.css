@@ -30,7 +30,6 @@
 
 .App-header {
   background-color: var(--primary);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +44,11 @@
 }
 .App-link {
   color: var(--accent);
+}
+
+.custom-row {
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes App-logo-spin {
