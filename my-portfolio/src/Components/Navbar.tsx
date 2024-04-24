@@ -7,16 +7,15 @@ import email from '../icons/email.svg'
 
 function NavigationBar (){
     return(
-        <div className='standard-marg-left'>
-            <Nav variant="underline" defaultActiveKey="/">
-                <Nav.Item>
-                    <Nav.Link href="/home" >About</Nav.Link>
+            <Nav variant="underline" defaultActiveKey="#about" className='sticky-top accent-background'>
+                <Nav.Item className='standard-marg-left'>
+                    <Nav.Link href="#about" >About</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/home">Projects</Nav.Link>
+                    <Nav.Link href="#projects">Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/home">Resume</Nav.Link>
+                    <Nav.Link href="#resume">Resume</Nav.Link>
                 </Nav.Item>
                 <NavDropdown title="Let's Chat" id="nav-dropdown">
                     <NavDropdown.Item  href="mailto:sydneyandre.dev@gmail.com" target="_blank" rel="noreferrer">
@@ -45,7 +44,7 @@ function NavigationBar (){
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>            
-        </div>
+      
     )
 }
 export default NavigationBar
