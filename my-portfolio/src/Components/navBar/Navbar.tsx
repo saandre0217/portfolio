@@ -1,13 +1,14 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import github from '../icons/github.svg'
-import linkedin from '../icons/linkedin.svg'
-import email from '../icons/email.svg'
+import github from '../../icons/github.svg'
+import linkedin from '../../icons/linkedin.svg'
+import email from '../../icons/email.svg'
+import { sectionIds } from './sectionId'
 
 function NavigationBar (){
     return(
-            <Nav variant="underline" defaultActiveKey="#about" className='sticky-top accent-background'>
+            <Nav variant="underline" defaultActiveKey="#about" className='sticky-top accent-background navbar-example'>
                 <Nav.Item className='standard-marg-left'>
                     <Nav.Link href="#about" >About</Nav.Link>
                 </Nav.Item>

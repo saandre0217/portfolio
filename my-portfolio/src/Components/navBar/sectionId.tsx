@@ -1,0 +1,1 @@
+export const sectionIds = ["about", "projects", "resume"];

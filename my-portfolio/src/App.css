@@ -63,6 +63,9 @@
 .accent-background {
   background-color: var(--accent);
 }
+.scroll-body{
+  position: relative;
+}
 
 @keyframes App-logo-spin {
   from {
