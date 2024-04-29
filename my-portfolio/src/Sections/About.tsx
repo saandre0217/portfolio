@@ -2,7 +2,7 @@ import React from 'react';
 
 function About () {
     return (
-        <div>
+        <section id='about'>
             <div>Hey *insert handwave*</div>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -16,7 +16,7 @@ sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
 recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
 minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
 quibusdam sed amet tempora. </div>
-        </div>
+        </section>
     )
 }
 export default About;

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Projects () {
     return (
-        <div>
+        <section id="projects">
             <div style={{marginTop:'3rem'}}>PROJECTS</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
 optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
@@ -29,7 +29,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
 optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
 obcaecat</div>
-        </div>
+        </section>
     )
 }
 export default Projects;
