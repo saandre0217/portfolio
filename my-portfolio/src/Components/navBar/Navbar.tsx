@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import github from '../../icons/github.svg';
@@ -20,11 +20,43 @@ function NavigationBar (){
             window.scrollTo({top: scrollToY, behavior:"smooth"});
         }
     }
+
+    const determinActiveSection = () => {
+        for(let i = sectionIds.length - 1; i >=0; i--){
+            const section = document.getElementById(sectionIds[i]);
+
+            if(section){
+                const rect = section.getBoundingClientRect();
+                if(rect.top <= 120 && rect.bottom >= 120){
+                    setActiveLink(sectionIds[i]);
+                    break;
+                }
+            }
+        }
+    }
+
+    const handleScroll = () => {
+        if(window.scrollY > 300) {
+            setIsScrolled(true)
+        } else {
+            setIsScrolled(false)
+        }
+        
+        determinActiveSection();
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
     return(
             <Nav variant="underline" defaultActiveKey="#about" className='sticky-top accent-background navbar-example'>
                 {sectionIds.map((id, i) => (
                     <Nav.Link  key={i} onClick={() => scrollToSection(id)}>
-                        <Link to="/" className="active" >{id}</Link>
+                        <Link to="/" className={activeLink === id ? "active" : ""} >{id}</Link>
                     </Nav.Link>
                 ))}
                 <NavDropdown title="Let's Chat" id="nav-dropdown">
