@@ -6,13 +6,13 @@ export const Contact = () => {
     return(
         <div className="custom-row">
             <a href="mailto:sydneyandre.dev@gmail.com" target="_blank" rel="noreferrer">
-            <img src={email}/>
+            <img className='icon' src={email}/>
             </a>
             <a href="http://linkedin.com/in/sydney-andre" target="_blank" rel="noreferrer">
-                <img src={linkedIn}/>
+                <img className='icon' src={linkedIn}/>
             </a>  
             <a href="http://github.com/saandre0217" target="_blank" rel="noreferrer">
-                <img src={github}/>
+                <img className='icon' src={github}/>
             </a>
            
             

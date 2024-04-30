@@ -1,30 +1,45 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+ 
 function Resume () {
+    const [resume, setResume] = useState(true)
+    const onDownload = () => {
+        const pdfUrl = "Sydeny Andre Resume";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = ''; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <section id='resume' className='justify-content start'>
         <div className='row justify-content start'>
-            <div className='col'></div>
+            <div className='col'>
+            </div>
             <div className='col-8' style={{ width: "100vw" }}>
                 <div className='sect-header row'>
                     <div className='col'></div>
-                    <div className='col'> Nice to Meet You :)</div>
+                    <div className='col'> 
+                    <div className='row'>
+                        <div className='col-8'>The Last Seven Years...</div>
+                        <button className='col'
+                        onClick={() => setResume(() => !resume)}
+                        >{resume ? 'spice it up' : 'back to basic'}</button>
+
+                    </div>
+                    </div>
 
                 </div>
                 <div className='row'>
                     <div className='col'></div>
                     <div className='col'>
-                        <div>
-                            What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                            make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
-                            What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                            make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
-                            What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                            make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
-                            What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                            make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
-                            What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                            make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
+                        <div >
+                            <a href={resume ? '/Sydney_Andre_Resume1.pdf' : 'Sydney_Andre_Resume2.pdf'} target="_blank" rel="noreferrer">
+
+                        <img src={resume ? '/resume_sa.png' : '/resume_pretty.png'} className='resume'/>
+                            </a>
+                      
+
                         </div>
                     </div>
 

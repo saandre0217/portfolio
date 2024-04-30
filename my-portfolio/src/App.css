@@ -14,10 +14,15 @@
   src: url("../public/Vonique\ 64\ Bold.ttf")
 }
 
-img {
+img.icon {
   margin: 1rem;
   height: 3vh;
   width: 3vw;
+}
+
+.resume {
+  height: 80vh;
+  width: auto;
 }
 .App {
   text-align: center;
@@ -111,7 +116,7 @@ button#active {
 }
 
 #resume {
-  background-color: var(--purple);
+  background-color: var(--neutral);
 }
 
 #projects {
