@@ -1,16 +1,29 @@
 import React from 'react';
 
-function About () {
+function About() {
     return (
-        <section id='about'>
-            <div className='row'>
+        <section id='about' className='justify-content start'>
+            <div className='row justify-content start'>
                 <div className='col'></div>
-                <div className='col-8 justify-content-start '>
-            <div className='sect-header'>Nice to Meet You :)</div>
-                <div className="sect-body">
-                My admirers describe me as [3 really cool adjects]. My enemies say I'm [3 adjectives that sound bad but are good]. 
-                But really I am just a curious, xxx, yyy softwarer developer ready to .
-                 </div>
+                <div className='col-8' style={{ width: "100vw" }}>
+                    <div className='sect-header row'>
+                        <div className='col'></div>
+                        <div className='col'> Nice to Meet You :)</div>
+
+                    </div>
+                    <div className='row'>
+                        <div className='col'></div>
+                        <div className='col'>
+                            <div>
+                                I'm Sydney, an oldest sister, podcast enthusist, and amateur seamstress.
+                            </div>
+                            <div>
+                                What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
+                                make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>

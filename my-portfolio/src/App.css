@@ -92,9 +92,15 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  
 }
 a.active {
   color: red;
+}
+
+button#active {
+  background-color: var(--purple);
+  color: var(--neutral);
 }
 #about, #projects, #resume {
   height: calc(100vh - 6rem);
@@ -113,8 +119,8 @@ a.active {
 }
 
 .sect-header {
-  font-size: 3.5vw;
-  text-align: end;
+  font-size: 2rem;
+  text-align: center;
   margin-right: 2vw;
   font-family: primary-font;
 }
@@ -122,6 +128,10 @@ a.active {
 .sect-body {
   text-align: end;
   margin-right: 2vw;
+  font-size: 1rem;
+  text-size-adjust: auto;
+  max-height: 66vh;
+  overflow: scroll;
 }
 
 .sticky {
@@ -130,11 +140,3 @@ a.active {
   top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
