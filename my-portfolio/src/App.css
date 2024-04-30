@@ -14,7 +14,11 @@
   src: url("../public/Vonique\ 64\ Bold.ttf")
 }
 
-
+img {
+  margin: 1rem;
+  height: 3vh;
+  width: 3vw;
+}
 .App {
   text-align: center;
 }
@@ -38,11 +42,14 @@
   justify-content: start;
   color: var(--neutral);
   font-family: "primary-font-bold";
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+  max-width: 30vw;
 }
 
 .title {
-  font-size: calc(5rem + 2vmin);
-  margin: 1rem;
+  font-size: 5vw;
+  margin: 1rem 1rem -1rem 1rem;
 }
 
 .App-link {
@@ -60,6 +67,14 @@
 .custom-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.custom-col {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .accent-background {
@@ -95,6 +110,24 @@ a.active {
 
 #projects {
   background-color: var(--accent);
+}
+
+.sect-header {
+  font-size: 3.5vw;
+  text-align: end;
+  margin-right: 2vw;
+  font-family: primary-font;
+}
+
+.sect-body {
+  text-align: end;
+  margin-right: 2vw;
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 @keyframes App-logo-spin {
