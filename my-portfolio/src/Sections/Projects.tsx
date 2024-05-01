@@ -7,8 +7,8 @@ function Projects() {
 
 
     return (
-        <section id='projects' className='justify-content start'>
-            <div className='row justify-content start'>
+        <section id='projects' >
+            <div className='row justify-content start' style={{marginRight:'2rem'}}>
                 <div className='col'></div>
                 <div className='col-8' style={{width: "100vw"}}>
                     <div className='sect-header row'>
@@ -16,17 +16,19 @@ function Projects() {
                         <div className='col'> Look What I Made!</div>
                         
                     </div>
-                    <div className="row">
+                    <div className="row ">
                         <div className='col'></div>
-                        <div className='col'>
+                        <div className='col '>
                             <div className='row'>
-                                <button className='col' id={project[0].projectName === 'WHSPR' ? 'active' : ''}
+                                <button className='col custom-button' id={project[0].projectName === 'WHSPR' ? 'active' : ''}
                                     onClick={() => setProject(projectData[0])}
+                                    
                                 >WHSPR</button>
-                                <button className='col' id={project[0].projectName === 'dogagatchi' ? 'active' : ''}
+                                
+                                <button className='col custom-button' id={project[0].projectName === 'dogagatchi' ? 'active' : ''}
                                      onClick={() => setProject(projectData[1])}
                                 >Dogagatchi</button>
-                                <button className='col' id={project[0].projectName === 'ttt' ? 'active' : ''}
+                                <button className='col custom-button' id={project[0].projectName === 'ttt' ? 'active' : ''}
                                      onClick={() => setProject(projectData[2])}
                                 >Tic Tac Toe</button>
                             </div>

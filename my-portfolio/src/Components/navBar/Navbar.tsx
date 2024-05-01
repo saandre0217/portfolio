@@ -49,10 +49,10 @@ function NavigationBar (){
         }
     }, [])
     return(
-            <Nav variant="underline" className='sticky-top accent-background navbar-example justify-content-end '>
+            <Nav variant="underline" className='sticky-top accent-background navbar-example justify-content-end' style={{width:'100vw', marginRight:'1.5rem'}}>
                 {sectionIds.map((id, i) => (
                     <Nav.Link  key={i} onClick={() => scrollToSection(id)}>
-                        <Link to="/" className={activeLink === id ? "active" : ""} >{id}</Link>
+                        <Link to="/" className={activeLink === id ? "active" : ""} style={{marginRight:'1.5rem'}} >{id}</Link>
                     </Nav.Link>
                 ))}
             </Nav>            

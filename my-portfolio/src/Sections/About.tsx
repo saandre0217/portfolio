@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
     return (
-        <section id='about' className='justify-content start'>
-            <div className='row justify-content start'>
+        <section id='about' style={{width:'100vw'}}>
+            <div className='row justify-content start ' style={{marginRight:'2rem'}}>
                 <div className='col'></div>
                 <div className='col-8' style={{ width: "100vw" }}>
                     <div className='sect-header row'>
@@ -11,9 +11,9 @@ function About() {
                         <div className='col'> Nice to Meet You :)</div>
 
                     </div>
-                    <div className='row'>
+                    <div className='row '>
                         <div className='col'></div>
-                        <div className='col'>
+                        <div className='col '>
                             <div>
                                 I'm Sydney, an oldest sister, podcast enthusist, and amateur seamstress.
                             </div>

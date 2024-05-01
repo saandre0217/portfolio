@@ -12,23 +12,15 @@ function Resume () {
         document.body.removeChild(link);
     };
     return (
-        <section id='resume' className='justify-content start'>
-        <div className='row justify-content start'>
-            <div className='col'>
-            </div>
+        <section id='resume' >
+        <div className='row justify-content start'style={{marginRight:'2rem'}}>
+            <div className='col'></div>
             <div className='col-8' style={{ width: "100vw" }}>
                 <div className='sect-header row'>
                     <div className='col'></div>
                     <div className='col'> 
-                    <div className='row'>
-                        <div className='col-8'>The Last Seven Years...</div>
-                        <button className='col'
-                        onClick={() => setResume(() => !resume)}
-                        >{resume ? 'spice it up' : 'back to basic'}</button>
-
+                        The Last Seven Years...
                     </div>
-                    </div>
-
                 </div>
                 <div className='row'>
                     <div className='col'></div>
@@ -42,8 +34,17 @@ function Resume () {
 
                         </div>
                     </div>
-
                 </div>
+                <div className='row'>
+                                <div className='col'></div>
+                                <div className='col'>
+
+                                <button className='col custom-button' 
+                        style={{marginRight:'2.5rem'}}
+                        onClick={() => setResume(() => !resume)}
+                        >{resume ? 'spice it up' : 'back to basic'}</button>
+                                </div>
+                            </div>
             </div>
         </div>
     </section>
