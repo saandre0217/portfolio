@@ -1,10 +1,11 @@
 :root {
   --primary: #025072af;
   --neutral: #F1EDE6;
-  --accent: #E2AEDD;
+  --accent: #e5b67c;
   --purple: #6A0136;
   --green: #55663E;
   --opaque: #025072;
+  --light-green: #8a9c73
 }
 @font-face {
   font-family: "header-font";
@@ -70,6 +71,14 @@ img.icon {
   width: 35vw;
   height: 25vh;
 }
+@media (max-width: 1050px) {
+  .App {
+    text-align: center;
+    /* max-width: 100; */
+    background: url(../public/background1-mobile.jpeg);
+    background-size: auto;
+  }
+}
 
 .shadow{
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -132,6 +141,18 @@ a.unactive {
 
 }
 
+#light .active {
+  color: var(--neutral);
+  
+}
+#light .unactive {
+  color: var(--light-green);
+  text-decoration: none;
+
+}
+
+
+
 button#active {
   background-color: var(--green);
   color: var(--neutral);
@@ -189,7 +210,7 @@ button#active {
 }
 
 .custom-button:hover {
-  background-color: #8a9c73;
+  background-color: var(--light-green);
   color: var(--neutral)
 }
 .sticky1 {
@@ -238,3 +259,4 @@ a:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+/* 55663eb2 */

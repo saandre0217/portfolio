@@ -39,7 +39,7 @@ function Projects() {
                             {project.map((data, i) => (
                                 <Carousel.Item key={i} interval={5000}>
                                    
-                                   <img src={data.imageSrc} style={{width:'50vw', height:'auto'}}/>
+                                   <img src={data.imageSrc} style={{width:'50vw', height:'auto', maxHeight:'50vh', objectFit:'scale-down'}}/>
                                    <div style={{margin:'1rem .5rem', fontFamily:'body-font', fontWeight:'700', color:'#F1EDE6'}}>{data.caption}</div>
                                </Carousel.Item>
                             ))}
@@ -51,7 +51,7 @@ function Projects() {
                                 </div>
                                 <div className='col'>
 
-                            <a className='custom-button unactive'>Learn More</a>
+                            <a className='custom-button unactive'>Dig In</a>
                                 </div>
                             </div>
                             </div>
