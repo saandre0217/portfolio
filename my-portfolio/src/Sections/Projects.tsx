@@ -7,7 +7,7 @@ function Projects() {
 
 
     return (
-        <section id='projects' >
+        <section id='Projects' >
             <div className='row justify-content start' style={{marginRight:'2rem'}}>
                 <div className='col'></div>
                 <div className='col-8' style={{width: "100vw"}}>

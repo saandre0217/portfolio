@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { sectionIds } from './sectionId';
 
 function NavigationBar (){
-    const [activeLink, setActiveLink] = useState("about")
+    const [activeLink, setActiveLink] = useState(sectionIds[0])
     const [ isScrolled, setIsScrolled ] = useState(false);
 
     const scrollToSection = (sectionId: string) => {
@@ -49,10 +49,10 @@ function NavigationBar (){
         }
     }, [])
     return(
-            <Nav variant="underline" className='sticky-top accent-background navbar-example justify-content-end' style={{width:'100vw', marginRight:'1.5rem'}}>
+            <Nav className='sticky-top  navbar-example justify-content-end' style={{width:'100vw', marginRight:'1.5rem', }}>
                 {sectionIds.map((id, i) => (
                     <Nav.Link  key={i} onClick={() => scrollToSection(id)}>
-                        <Link to="/" className={activeLink === id ? "active" : ""} style={{marginRight:'1.5rem'}} >{id}</Link>
+                        <Link to="/" className={activeLink === id ? "active" : "unactive"} style={{marginRight:'1.5rem'}} >{id}</Link>
                     </Nav.Link>
                 ))}
             </Nav>            

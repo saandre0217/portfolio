@@ -8,11 +8,16 @@ import { Contact } from './Components/Contact';
 function App() {
   return (
     <div className="App ">
-      <header className="App-header sticky ">
-        <div className="title ">sydney andre</div>
+      <header className="App-header sticky1 shadow ">
+        <div className="title " style={{marginTop:"1rem", marginBottom:'.5rem'}}>Sydney Andre</div>
         <Contact />
       </header>
-
+      <header className="App-header sticky2 shadow " style={{top:'50'}}>
+        <div className='title'>Vision</div>
+      </header>
+      <header className="App-header sticky3 shadow " style={{top:'50'}}>
+        <div className='title'>Skills</div>
+      </header>
             <Router >
             <NavigationBar />
               <Routes> 

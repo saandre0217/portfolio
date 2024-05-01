@@ -12,7 +12,7 @@ function Resume () {
         document.body.removeChild(link);
     };
     return (
-        <section id='resume' >
+        <section id='Resume' >
         <div className='row justify-content start'style={{marginRight:'2rem'}}>
             <div className='col'></div>
             <div className='col-8' style={{ width: "100vw" }}>
