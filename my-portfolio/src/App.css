@@ -4,6 +4,7 @@
   --accent: #E2AEDD;
   --purple: #6A0136;
   --green: #55663E;
+  --opaque: #025072;
 }
 @font-face {
   font-family: "header-font";
@@ -71,7 +72,7 @@ img.icon {
 }
 
 .shadow{
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .title {
   font-size: 5vw;
@@ -122,7 +123,7 @@ section {
   
 }
 a.active {
-  color: var(--primary);
+  color: var(--opaque);
   
 }
 a.unactive {
@@ -132,8 +133,9 @@ a.unactive {
 }
 
 button#active {
-  background-color: var(--purple);
+  background-color: var(--green);
   color: var(--neutral);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .custom-button {
@@ -142,6 +144,9 @@ button#active {
   border-radius: 1rem;
   font-size: 1rem;
   font-family: body-font;
+  border: none;
+  background-color: var(--neutral);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #About, #Projects, #Resume {
   height: calc(100vh - 6rem);
@@ -169,10 +174,11 @@ button#active {
   /* margin-right: 2vw; */
   font-family: subheader-font;
   font-weight: 500;
+  color:var(--opaque)
 }
 
 .sect-body {
-  text-align: end;
+  text-align: center;
   /* margin-right: 2vw; */
   font-size: 1rem;
   text-size-adjust: auto;
@@ -182,6 +188,10 @@ button#active {
  
 }
 
+.custom-button:hover {
+  background-color: #8a9c73;
+  color: var(--neutral)
+}
 .sticky1 {
   position: fixed;
   left: 0;
@@ -200,4 +210,31 @@ button#active {
 .nav {
   font-family: header-font;
   font-size: 2rem;
+}
+
+a:hover {
+  animation-name: wiggle;
+  animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes wiggle {
+  0% {transform: rotate(3deg);}
+  25% {transform: rotate(-3deg);}
+  50% {transform: rotate(6deg);}
+  75% {transform: rotate(-1deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.divider {
+  background-color: #55663eb2;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
