@@ -69,7 +69,7 @@ function Projects() {
                             </div>
                             <div className='divider'>
 
-                            <div style={{margin:'.5rem', fontFamily:'subheader-font', fontWeight:'700', color:'#F1EDE6'}}>{project[0].projectDesc}</div>
+                            {/* <div style={{margin:'.5rem', fontFamily:'subheader-font', fontWeight:'700', color:'#F1EDE6'}}>{project[0].projectDesc}</div> */}
                             <Carousel indicators={false}>
                             {project.map((data, i) => (
                                 <Carousel.Item key={i} interval={5000}>

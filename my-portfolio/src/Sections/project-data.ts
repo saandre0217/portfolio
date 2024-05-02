@@ -3,6 +3,15 @@ import home from '../images/WHSPR/home.png'
 import conch from '../images/WHSPR/conch.png'
 import inbox from '../images/WHSPR/inbox.png'
 import share from '../images/WHSPR/share.png'
+import tags from '../images/WHSPR/tags.png'
+import dogHome from '../images/Dogagatchi/d_home.png'
+import cafe from '../images/Dogagatchi/cafe.png'
+import kennel from '../images/Dogagatchi/kennel.png'
+import leaderboard from '../images/Dogagatchi/leaderboard.png'
+import trivia from '../images/Dogagatchi/trivia.png'
+
+
+
 export const projectData = [
     [
         {
@@ -13,34 +22,42 @@ export const projectData = [
                 type:'Projects',
                 header: 'WHSPR',
                 classDesc: 'App-header sticky2 shadow',
-                body: 'explaination about whspr'
+                body: 'WHSPR was created by five people with two things in common: a love for web development and a vision of a digital world more steeped in what people had to say than what they looked like. So we created WHSPR, an audio-exclusive social media application.',
+                link: '',
+                linkText: '',
             },
             {
                 type:'Projects',
                 header: 'Tech Stack',
                 classDesc: 'App-header sticky3 shadow',
-                body: 'all whspr tech'
+                body: 'TypeScript | React | Node.js | Express | PosgresSQL | Bootstrap | SASS | Axios | Wavesurfer.js | Webpack | OAuth | Deployed with AWS ',
+                link: '',
+                linkText: '',
             },
         ],
         web:'https://whspr.live',
         imageSrc: home,
-        caption: 'Welcome to WHSPR! Get a little taste of the application with the home page'
+        caption: 'Welcome to WHSPR! Get a first taste at what to expect on the home page.'
+        },
+        {
+        imageSrc: tags,
+        caption: 'Make sure your feed is filled with interesting WHSPRs by selecting your top tags.'
         },
         {
         imageSrc: comment,
-        caption: 'See others and your own comments on WHSPR\'s explore feed'
+        caption: 'Add your own or listen to comments on your explore feed.'
         },
         {
         imageSrc: share,
-        caption: 'Send your favorite WHSPRs to your friends'
+        caption: 'Spread the word by sharing your favorite WHSPRs with your friends.'
         },
         {
         imageSrc: inbox,
-        caption: 'Listen to WHSPRs your friends have sent in your inbox'
+        caption: 'Keep up with your friends\' favorite in your inbox.'
         },
         {
         imageSrc: conch,
-        caption: 'Or suprise messages that shown up on the shore'
+        caption: 'Or maybe find suprise messages.'
         },
         
     ],
@@ -53,34 +70,38 @@ export const projectData = [
                 type:'Projects',
                 header: 'Dogagatchi',
                 classDesc: 'App-header sticky2 shadow',
-                body: 'explaination about dogagatchi'
+                body: 'Have you ever felt like you there was no where to show off all your dog breed knowledge and amazing pup parent skills? You are finally in luck! Dogagatchi combines trivia and caretaking game components for an immersive dog-owning experience.',
+                link: '',
+                linkText: '',
             },
             {
                 type:'Projects',
                 header: 'Tech Stack',
                 classDesc: 'App-header sticky3 shadow',
-                body: 'all dogagatchi tech'
+                body: 'JavaScript | React | Node.js | Express | MongoDB | Bootstrap | Axios | Webpack | Deployed with AWS ',
+                link: '',
+                linkText: '',
             },
         ],
         web:'http://dogagatchi.com/',
-        imageSrc: home,
-        caption: 'dog'
+        imageSrc: dogHome,
+        caption: 'Start your Dogagatchi journey on the home page.'
         },
         {
-        imageSrc: comment,
-        caption: 'dog'
+        imageSrc: trivia,
+        caption: 'Show off your knowledge and earn coins with the Pooch Picker.'
         },
         {
-        imageSrc: share,
-        caption: 'Send your favorite WHSPRs to your friends'
+        imageSrc: cafe,
+        caption: 'Make sure your pup is well fed by buying treats at the Bone Appetit Cafe.'
         },
         {
-        imageSrc: inbox,
-        caption: 'Listen to WHSPRs your friends have sent in your inbox'
+        imageSrc: kennel,
+        caption: 'Buy a new pup and check up on the rest of your pack in the Kennel.'
         },
         {
-        imageSrc: conch,
-        caption: 'Or suprise messages that shown up on the shore'
+        imageSrc: leaderboard,
+        caption: 'Track where you stand in the rest of the pack on our global leaderboard.'
         },
        
     ],
@@ -94,13 +115,17 @@ export const projectData = [
                 type:'Projects',
                 header: 'TTT',
                 classDesc: 'App-header sticky2 shadow',
-                body: 'explaination about TTT'
+                body: 'explaination about TTT',
+                link: '',
+                linkText: '',
             },
             {
                 type:'Projects',
                 header: 'Tech Stack',
                 classDesc: 'App-header sticky3 shadow',
-                body: 'all TTT tech'
+                body: 'all TTT tech',
+                link: '',
+                linkText: '',
             },
         ],
         imageSrc: home,

@@ -28,7 +28,7 @@ function Resume () {
                         <div >
                             <a href={resume ? '/Sydney_Andre_Resume1.pdf' : 'Sydney_Andre_Resume2.pdf'} target="_blank" rel="noreferrer">
 
-                        <img src={resume ? '/resume_sa.png' : '/resume_pretty.png'} className='resume'/>
+                        <img src='/resume_pretty.png' className='resume'/>
                             </a>
                       
 

@@ -5,6 +5,8 @@ export type InfoObjModel = {
     header: string,
     classDesc: string,
     body: string,
+    link: string,
+    linkText: string,
 }
 
 export interface InfoObjProps {
@@ -15,9 +17,10 @@ export const InfoBox = (infoObj: InfoObjProps) => {
     const obj = infoObj.infoObjData
     return (
         <div className="App">
-            <header className={obj.classDesc} style={{ top: '50' }}>
+            <header className={`${obj.classDesc} justify-content-center`} style={{ top: '50' }}>
                 <div className='sub-title'>{obj.header}</div>
-                <div className="sect-body">{obj.body}</div>
+                <div className="sect-body ">{obj.body}</div>
+                <a style={{color:'#F1EDE6'}} href={obj.link}>{obj.linkText}</a>
             </header>
         </div>
     )

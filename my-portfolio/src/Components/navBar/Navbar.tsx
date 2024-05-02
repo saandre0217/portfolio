@@ -9,6 +9,7 @@ function NavigationBar (){
     const [activeLink, setActiveLink] = useState(sectionIds[0])
     const [ isScrolled, setIsScrolled ] = useState(false);
     const [infoObj, setInfoObj] = useState(About)
+    
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
 
