@@ -42,3 +42,17 @@ export const projectsInfoObjs: InfoObjModel[] = [
         body: ''
     },
 ]
+export const whsprInfoObjs: InfoObjModel[] = [
+    {
+        type:'Projects',
+        header: 'WHSPR',
+        classDesc: 'App-header sticky2 shadow',
+        body: 'explaination about whspr'
+    },
+    {
+        type:'Projects',
+        header: 'Tech Stack',
+        classDesc: 'App-header sticky3 shadow',
+        body: 'all whspr tech'
+    },
+]

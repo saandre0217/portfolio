@@ -1,13 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { projectData } from './project-data';
-import comment from '../images/WHSPR/comment.png'
+import { InfoBox } from '../Components/infoBox/InfoBox';
 function Projects() {
     const [project, setProject ] = useState(projectData[0])
+    const [isInfoBoxShow, setIsInfoBoxShow] = useState(false)
+    const [ isScrolled, setIsScrolled ] = useState(false);
 
+    const determineShowProjectsInfoBox = () => {
+            const section = document.getElementById('Projects');
+
+            if(section){
+                const rect = section.getBoundingClientRect();
+                if(rect.top <= 120 && rect.bottom >= 120){
+                setIsInfoBoxShow(true)
+                } else {
+                    setIsInfoBoxShow(false)
+                }
+            }
+    }
+
+    const handleScroll = () => {
+        if(window.scrollY > 300) {
+            setIsScrolled(true)
+        } else {
+            setIsScrolled(false)
+        }
+        
+        determineShowProjectsInfoBox();
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
     return (
         <section id='Projects' >
+          {project[0].infoObjs?.map((infoObj, i) => (
+           isInfoBoxShow ? <InfoBox key={i+'projInfo'} infoObjData={infoObj}/> : ''
+          ))}
             <div className='row justify-content start' style={{marginRight:'2rem'}}>
                 <div className='col'></div>
                 <div className='col-8' style={{width: "100vw"}}>
