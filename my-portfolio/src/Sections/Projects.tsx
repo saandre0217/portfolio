@@ -47,11 +47,11 @@ function Projects() {
                             <div className='row' style={{marginBottom:'.5rem'}}>
                                 <div className='col'>
 
-                            <a href={project[0].web} target="_blank" rel="noreferrer" className='custom-button unactive'>Visit</a>
+                            <a href={project[0].web} target="_blank" rel="noreferrer" className='custom-button unactive' style={{textShadow:'none'}}>Visit</a>
                                 </div>
                                 <div className='col'>
 
-                            <a className='custom-button unactive'>Dig In</a>
+                            <a className='custom-button unactive' style={{textShadow:'none'}}>Dig In</a>
                                 </div>
                             </div>
                             </div>

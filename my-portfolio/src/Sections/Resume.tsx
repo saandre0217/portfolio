@@ -34,7 +34,7 @@ function Resume () {
 
                         </div>
                     </div>
-                </div>
+                </div>  
                 <div className='row'>
                                 <div className='col'></div>
                                 <div className='col' style={{marginTop:'.5rem'}}>
