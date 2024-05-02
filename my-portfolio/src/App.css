@@ -311,3 +311,6 @@ a:hover {
   filter: drop-shadow( 3px 3px 2px rgba(232, 11, 11, 0.7));
   /* Similar syntax to box-shadow */
 }
+.hidden {
+  display: none;
+}

@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-router-dom";
 import { sectionIds } from './sectionId';
-import { InfoBox } from '../InfoBox';
+import { aboutInfoObjs as About, resumeInfoObjs as Resume, projectsInfoObjs as Projects} from '../infoBox/infoObjs';
+import  {InfoBox, InfoObjModel } from '../infoBox/InfoBox';
 
 function NavigationBar (){
     const [activeLink, setActiveLink] = useState(sectionIds[0])
     const [ isScrolled, setIsScrolled ] = useState(false);
-
+    const [infoObj, setInfoObj] = useState(About)
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
 
@@ -16,6 +17,15 @@ function NavigationBar (){
             const scrollToY = element.getBoundingClientRect().top + window.scrollY - marginTop;
             window.scrollTo({top: scrollToY, behavior:"smooth"});
         }
+
+        if(sectionId === 'About') {
+            setInfoObj(About)
+        } else if( sectionId === 'Projects'){
+            setInfoObj(Projects)
+        } else if(sectionId === 'Resume'){
+            setInfoObj(Resume)
+        }
+        
     }
 
     const determinActiveSection = () => {
@@ -26,6 +36,13 @@ function NavigationBar (){
                 const rect = section.getBoundingClientRect();
                 if(rect.top <= 120 && rect.bottom >= 120){
                     setActiveLink(sectionIds[i]);
+                    if(sectionIds[i] === 'About') {
+                        setInfoObj(About)
+                    } else if( sectionIds[i] === 'Projects'){
+                        setInfoObj(Projects)
+                    } else if(sectionIds[i] === 'Resume'){
+                        setInfoObj(Resume)
+                    }
                     break;
                 }
             }
@@ -49,10 +66,12 @@ function NavigationBar (){
             window.removeEventListener("scroll", handleScroll)
         }
     }, [])
-    return(
-        <div>
 
-            <Nav className='sticky-top navbar-example justify-content-start' style={{ marginRight:'1rem'}}>
+    return(
+     
+            <div className='sticky1'>
+
+            <Nav className='navbar-example justify-content-start' style={{ marginRight:'1rem'}}>
                 
 
                 {sectionIds.map((id, i) => (
@@ -60,10 +79,18 @@ function NavigationBar (){
                         <Link to="/" className={activeLink === id ? "active" : "unactive"} >{id}</Link>
                     </Nav.Link>
                 ))}
-            </Nav>            
-        <InfoBox></InfoBox>
-        </div>
+            </Nav>
+            { infoObj.map((obj:InfoObjModel, i) => (
+                <InfoBox key={i+'infobox'} infoObjData={obj} />
+            ))} 
+            </div>
+                 
+                  
+       
       
     )
 }
-export default NavigationBar
+export default NavigationBar;
+/**
+ *    
+ */
