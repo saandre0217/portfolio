@@ -13,7 +13,7 @@ function Projects() {
                 <div className='col-8' style={{width: "100vw"}}>
                     <div className='sect-header row'>
                         <div className='col'></div>
-                        <div className='col' style={{marginTop:'2.5rem'}}> Look What I Made!</div>
+                        <div className='col justify-content-center' style={{marginTop:'2.5rem'}}>My Work</div>
                         
                     </div>
                     <div className="row ">
@@ -35,16 +35,16 @@ function Projects() {
                             <div className='divider'>
 
                             <div style={{margin:'.5rem', fontFamily:'subheader-font', fontWeight:'700', color:'#F1EDE6'}}>{project[0].projectDesc}</div>
-                            <Carousel>
+                            <Carousel indicators={false}>
                             {project.map((data, i) => (
                                 <Carousel.Item key={i} interval={5000}>
                                    
-                                   <img src={data.imageSrc} style={{width:'50vw', height:'auto', maxHeight:'50vh', objectFit:'scale-down'}}/>
-                                   <div style={{margin:'1rem .5rem', fontFamily:'body-font', fontWeight:'700', color:'#F1EDE6'}}>{data.caption}</div>
+                                   <img src={data.imageSrc} className='carousel-image' />
+                                   <div style={{margin:'.5rem .5rem 1rem .5rem', fontFamily:'body-font', fontWeight:'700', color:'#F1EDE6'}}>{data.caption}</div>
                                </Carousel.Item>
                             ))}
                             </Carousel> 
-                            <div className='row'>
+                            <div className='row' style={{marginBottom:'.5rem'}}>
                                 <div className='col'>
 
                             <a href={project[0].web} target="_blank" rel="noreferrer" className='custom-button unactive'>Visit</a>

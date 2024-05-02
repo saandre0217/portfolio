@@ -8,7 +8,7 @@ function About() {
                 <div className='col-8' style={{ width: "100vw" }}>
                     <div className='sect-header row'>
                         <div className='col'></div>
-                        <div className='col'> Nice to Meet You :)</div>
+                        <div className='col'> Nice to Meet Me</div>
 
                     </div>
                     <div className='row '>

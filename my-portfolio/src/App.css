@@ -1,11 +1,13 @@
 :root {
   --primary: #025072af;
   --neutral: #F1EDE6;
-  --accent: #e5b67c;
-  --purple: #6A0136;
+  --accent: #d8aa78;
+  --orange: #ce8b3a;
+  --purple: #6a2801;
   --green: #55663E;
   --opaque: #025072;
-  --light-green: #8a9c73
+  --light-green: #8a9c73;
+  --light-blue: #8dc6df;
 }
 @font-face {
   font-family: "header-font";
@@ -35,7 +37,6 @@ img.icon {
 .resume {
   height: auto;
   max-height: 70vh;
-
   max-width: 60vw;
   width:auto;
   object-fit: scale-down;
@@ -50,6 +51,10 @@ img.icon {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.carousel-indicators {
+  display: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -78,6 +83,38 @@ img.icon {
     background: url(../public/background1-mobile.jpeg);
     background-size: auto;
   }
+
+  .carousel-image {
+    width:35vw; 
+    height:auto; 
+    max-height:50vh; 
+    object-fit:scale-down;
+  }
+
+  .divider {
+    margin-left: 1rem;
+    width: 50vw;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .resume {
+    height: auto;
+    max-height: 70vh;
+    max-width: 50vw;
+    width:auto;
+    object-fit: scale-down;
+  }
+  img.icon {
+    margin: .5rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  
 }
 
 .shadow{
@@ -132,15 +169,15 @@ section {
   
 }
 a.active {
-  color: var(--opaque);
-  
+  color: var(--accent);
+  text-decoration: none;
+  text-shadow:2px 2px 2px var(--purple)
 }
 a.unactive {
-  color: var(--green);
+  color: var(--purple);
   text-decoration: none;
-
+  text-shadow:2px 2px 2px var(--accent)
 }
-
 #light .active {
   color: var(--neutral);
   
@@ -154,7 +191,7 @@ a.unactive {
 
 
 button#active {
-  background-color: var(--green);
+  background-color: var(--purple);
   color: var(--neutral);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -168,6 +205,7 @@ button#active {
   border: none;
   background-color: var(--neutral);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: var(--purple)
 }
 #About, #Projects, #Resume {
   height: calc(100vh - 6rem);
@@ -210,7 +248,7 @@ button#active {
 }
 
 .custom-button:hover {
-  background-color: var(--light-green);
+  background-color: var(--accent);
   color: var(--neutral)
 }
 .sticky1 {
@@ -258,5 +296,11 @@ a:hover {
   border-radius: .5rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
+}
+.carousel-image {
+  width:50vw; 
+  height:auto; 
+  max-height:50vh; 
+  object-fit:scale-down;
 }
 /* 55663eb2 */

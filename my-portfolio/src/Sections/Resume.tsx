@@ -19,7 +19,7 @@ function Resume () {
                 <div className='sect-header row'>
                     <div className='col'></div>
                     <div className='col'> 
-                        The Last Seven Years...
+                        My Experience
                     </div>
                 </div>
                 <div className='row'>
@@ -37,12 +37,12 @@ function Resume () {
                 </div>
                 <div className='row'>
                                 <div className='col'></div>
-                                <div className='col'>
+                                <div className='col' style={{marginTop:'.5rem'}}>
 
-                                <button className='col custom-button' 
-                        style={{marginRight:'2.5rem'}}
-                        onClick={() => setResume(() => !resume)}
-                        >{resume ? 'spice it up' : 'back to basic'}</button>
+                                <a className='col custom-button' 
+                        style={{marginRight:'2.5rem', textDecoration:'none', }}
+                        href='Sydney_Andre_Resume2.pdf' target="_blank" rel="noreferrer"
+                        >Get a Copy</a>
                                 </div>
                             </div>
             </div>
