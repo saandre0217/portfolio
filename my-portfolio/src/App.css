@@ -8,6 +8,7 @@
   --opaque: #025072;
   --light-green: #8a9c73;
   --light-blue: #8dc6df;
+  --dark-primary: #012d41;
 }
 @font-face {
   font-family: "header-font";
@@ -83,9 +84,8 @@ img.icon {
     background: url(../public/background1-mobile.jpeg);
     background-size: auto;
   }
-
   .carousel-image {
-    width:35vw; 
+    width:auto; 
     height:auto; 
     max-height:50vh; 
     object-fit:scale-down;
@@ -111,18 +111,22 @@ img.icon {
   img.icon {
     margin: .5rem;
   }
-  .title {
-    font-size: 3rem;
-  }
+  
   
 }
 
 .shadow{
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.title {
+.main-title {
   font-size: 5vw;
   margin: 1rem 1rem -1rem 1rem;
+  text-shadow: 4px 4px 2px var(--dark-primary);
+}
+.sub-title {
+  font-size: 3vw;
+  margin: 0rem 1rem -1rem 1rem;
+  text-shadow: 4px 4px 2px var(--dark-primary);
 }
 
 .App-link {
@@ -303,4 +307,7 @@ a:hover {
   max-height:50vh; 
   object-fit:scale-down;
 }
-/* 55663eb2 */
+.svg-shadow {
+  filter: drop-shadow( 3px 3px 2px rgba(232, 11, 11, 0.7));
+  /* Similar syntax to box-shadow */
+}

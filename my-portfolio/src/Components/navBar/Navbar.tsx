@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-router-dom";
 import { sectionIds } from './sectionId';
+import { InfoBox } from '../InfoBox';
 
 function NavigationBar (){
     const [activeLink, setActiveLink] = useState(sectionIds[0])
@@ -49,7 +50,9 @@ function NavigationBar (){
         }
     }, [])
     return(
-            <Nav className='sticky-top navbar-example justify-content-start'  id={activeLink === 'About' ? 'nav-background' : ''} style={{ marginRight:'1rem'}}>
+        <div>
+
+            <Nav className='sticky-top navbar-example justify-content-start' style={{ marginRight:'1rem'}}>
                 
 
                 {sectionIds.map((id, i) => (
@@ -58,6 +61,8 @@ function NavigationBar (){
                     </Nav.Link>
                 ))}
             </Nav>            
+        <InfoBox></InfoBox>
+        </div>
       
     )
 }
