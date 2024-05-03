@@ -14,12 +14,13 @@ function About() {
                     <div className='row '>
                         <div className='col'></div>
                         <div className='col '>
-                            <div className='sect-body'>
-                                I'm Sydney, an oldest sister, podcast enthusist, and amateur seamstress.
+                            <div className='sect-body' style={{fontSize:'1.25rem'}}>
+                                I'm Sydney, oldest sister, podcast enthusist, and amateur seamstress.
                             </div>
                             <div className='sect-body'>
-                                What I'm really saying is I am driven, curious, and creative by nature. All that combined with my awesome JavaScript skills and six years of professional experience supporting educational progress in Louisiana
-                                make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! If you're not convinced just yet, keep scrolling ;)
+                                What I am <i>really </i> saying is I am ambitious, curious, and creative. All of my natural greatness, combined with my love of software development, technical understanding of JavaScript,
+                                and six years of professional project managment and marketing experience make me a software developer you'd be lucky to have on your team. If you think so too, let's chat! 
+                                If you're not convinced yet, just keep scrolling.
                             </div>
                         </div>
 
