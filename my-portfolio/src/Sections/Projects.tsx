@@ -48,13 +48,13 @@ function Projects() {
                 <div className='col-8' style={{width: "100vw"}}>
                     <div className='sect-header row'>
                         <div className='col'></div>
-                        <div className='col justify-content-center' style={{marginTop:'2.5rem'}}>My Work</div>
+                        <div className='col'style={{marginRight:'2rem'}} >Web Development</div>
                         
                     </div>
                     <div className="row ">
-                        <div className='col'></div>
+                        <div className='col' ></div>
                         <div className='col '>
-                            <div className='row' style={{margin:'.5rem'}}>
+                            <div  className='row'>
                                 <button className='col custom-button' id={project[0].projectName === 'WHSPR' ? 'active' : ''}
                                     onClick={() => setProject(projectData[0])}
                                     
@@ -63,11 +63,11 @@ function Projects() {
                                 <button className='col custom-button' id={project[0].projectName === 'dogagatchi' ? 'active' : ''}
                                      onClick={() => setProject(projectData[1])}
                                 >Dogagatchi</button>
-                                <button className='col custom-button' id={project[0].projectName === 'ttt' ? 'active' : ''}
+                                {/* <button className='col custom-button' id={project[0].projectName === 'ttt' ? 'active' : ''}
                                      onClick={() => setProject(projectData[2])}
-                                >Tic Tac Toe</button>
+                                >Tic Tac Toe</button> */}
                             </div>
-                            <div className='divider'>
+                            <div className=' col divider'>
 
                             {/* <div style={{margin:'.5rem', fontFamily:'subheader-font', fontWeight:'700', color:'#F1EDE6'}}>{project[0].projectDesc}</div> */}
                             <Carousel indicators={false}>
@@ -86,7 +86,7 @@ function Projects() {
                                 </div>
                                 <div className='col'>
 
-                            <a className='custom-button unactive' style={{textShadow:'none'}}>Dig In</a>
+                            <a href={project[0].github} target="_blank" rel="noreferrer" className='custom-button unactive' style={{textShadow:'none'}}>Dig In</a>
                                 </div>
                             </div>
                             </div>

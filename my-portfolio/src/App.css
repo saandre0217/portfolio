@@ -170,6 +170,7 @@ section {
   justify-content: center;
   text-align: center;
   width: 100vw;
+ 
   
 }
 a.active {
@@ -191,7 +192,6 @@ a.unactive {
   text-decoration: none;
 
 }
-
 
 
 button#active {

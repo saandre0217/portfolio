@@ -36,6 +36,7 @@ export const projectData = [
             },
         ],
         web:'https://whspr.live',
+        github:'https://github.com/Auralities/whspr',
         imageSrc: home,
         caption: 'Welcome to WHSPR! Get a first taste at what to expect on the home page.'
         },
@@ -84,6 +85,7 @@ export const projectData = [
             },
         ],
         web:'http://dogagatchi.com/',
+        github:'https://github.com/Fighting-Mongeese/Dogagatchi',
         imageSrc: dogHome,
         caption: 'Start your Dogagatchi journey on the home page.'
         },
@@ -109,6 +111,7 @@ export const projectData = [
         {
         projectName:'ttt',
         web:'www.google.com',
+        github:'',
         projectDesc:'Face Trixie, the unbeatable Tic Tac Toe master.',
         infoObjs: [
             {

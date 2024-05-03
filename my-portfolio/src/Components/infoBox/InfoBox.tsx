@@ -20,7 +20,7 @@ export const InfoBox = (infoObj: InfoObjProps) => {
             <header className={`${obj.classDesc} justify-content-center`} style={{ top: '50' }}>
                 <div className='sub-title'>{obj.header}</div>
                 <div className="sect-body ">{obj.body}</div>
-                <a style={{color:'#F1EDE6'}} href={obj.link}>{obj.linkText}</a>
+                <a style={{color:'#F1EDE6'}} target="_blank" rel="noreferrer" href={obj.link}>{obj.linkText}</a>
             </header>
         </div>
     )
