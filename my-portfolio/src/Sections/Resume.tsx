@@ -4,10 +4,10 @@ function Resume () {
     const [resume, setResume] = useState(true)
     
     return (
-        <section id='Resume' >
+        <section id='Resume'  >
         <div className='row justify-content start'style={{marginRight:'2rem'}}>
-            <div className='col'></div>
-            <div className='col-8' style={{ width: "100vw" }}>
+            <div className='col-md-8'></div>
+            <div className='col-6 col-md-4' style={{ width: "100vw" }}>
                 <div className='sect-header row'>
                     <div className='col'></div>
                     <div className='col'> My Experience</div>

@@ -2,10 +2,10 @@ import React from 'react';
 
 function About() {
     return (
-        <section id='About' style={{width:'100vw'}}>
+        <section id='About' className='App' style={{width:'100vw'}}>
             <div className='row justify-content start ' style={{marginRight:'2rem'}}>
-                <div className='col'></div>
-                <div className='col-8' style={{ width: "100vw" }}>
+                <div className='col-md-8'></div>
+                <div className='col-6 col-md-4' style={{ width: "100vw" }}>
                     <div className='sect-header row'>
                         <div className='col'></div>
                         <div className='col'> Nice to Meet Me</div>

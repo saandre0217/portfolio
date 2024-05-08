@@ -39,34 +39,35 @@ function Projects() {
     }, [])
 
     return (
-        <section id='Projects' >
+        <section className='App' id='Projects' >
           {project[0].infoObjs?.map((infoObj, i) => (
            isInfoBoxShow ? <InfoBox key={i+'projInfo'} infoObjData={infoObj}/> : ''
           ))}
-            <div className='row justify-content start' style={{marginRight:'2rem'}}>
-                <div className='col'></div>
-                <div className='col-8' style={{width: "100vw"}}>
+            <div className='row justify-content-start' style={{marginRight:'2rem'}}>
+                <div className='col-md-8'></div>
+                <div className='col-6 col-md-4' style={{width: "100vw"}}>
                     <div className='sect-header row'>
                         <div className='col'></div>
-                        <div className='col'style={{marginRight:'2rem'}} >Web Development</div>
+                        <div className='col ' >Web Development</div>
                         
                     </div>
-                    <div className="row ">
+                    <div className="row justify-content-start">
                         <div className='col' ></div>
                         <div className='col '>
-                            <div  className='row'>
-                                <button className='col custom-button' id={project[0].projectName === 'WHSPR' ? 'active' : ''}
+                            {/* <div  className='row ' style={{width:'33vw'}}> */}
+                           
+                                <button className=' custom-button' id={project[0].projectName === 'WHSPR' ? 'active' : ''}
                                     onClick={() => setProject(projectData[0])}
                                     
                                 >WHSPR</button>
-                                
-                                <button className='col custom-button' id={project[0].projectName === 'dogagatchi' ? 'active' : ''}
+                             
+                                <button className=' custom-button' id={project[0].projectName === 'dogagatchi' ? 'active' : ''}
                                      onClick={() => setProject(projectData[1])}
                                 >Dogagatchi</button>
                                 {/* <button className='col custom-button' id={project[0].projectName === 'ttt' ? 'active' : ''}
                                      onClick={() => setProject(projectData[2])}
                                 >Tic Tac Toe</button> */}
-                            </div>
+                            {/* </div> */}
                             <div className=' col divider'>
 
                             {/* <div style={{margin:'.5rem', fontFamily:'subheader-font', fontWeight:'700', color:'#F1EDE6'}}>{project[0].projectDesc}</div> */}
@@ -75,7 +76,7 @@ function Projects() {
                                 <Carousel.Item key={i} interval={5000}>
                                    
                                    <img src={data.imageSrc} className='carousel-image' />
-                                   <div style={{margin:'.5rem .5rem 1rem .5rem', fontFamily:'body-font', fontWeight:'700', color:'#F1EDE6'}}>{data.caption}</div>
+                                   <div className='carousel-desc' style={{margin:'.5rem .5rem 1rem .5rem', fontFamily:'body-font', fontWeight:'700', color:'#F1EDE6'}}>{data.caption}</div>
                                </Carousel.Item>
                             ))}
                             </Carousel> 

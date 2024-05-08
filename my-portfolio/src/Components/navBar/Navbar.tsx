@@ -70,7 +70,7 @@ function NavigationBar (){
 
     return(
      
-            <div className='sticky1'>
+            <div className='sticky1 row'>
 
             <Nav className='navbar-example justify-content-start' style={{ marginRight:'1rem'}}>
                 
