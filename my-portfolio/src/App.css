@@ -90,6 +90,9 @@ img.icon {
     background: url(../public/background1-mobile.jpeg);
     background-size: auto;
   }
+  .sub-title {
+    font-size: 1.25rem;
+  }
   .active, .unactive{
     font-size: 1.5rem;
   }
@@ -98,6 +101,15 @@ img.icon {
     height:auto; 
     max-height:50vh; 
     object-fit:scale-down;
+  }
+  .sect-header2 {
+    /* text-align: center; */
+    /* margin-right: 2vw; */
+    font-family: subheader-font;
+    font-weight: 500;
+    color:var(--opaque);
+
+    
   }
   .carousel-desc {
     font-size: 1rem;
@@ -135,7 +147,7 @@ img.icon {
   text-shadow: 4px 4px 2px var(--dark-primary);
 }
 .sub-title {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0rem 1rem 0rem 1rem;
   text-shadow: 4px 4px 2px var(--dark-primary);
 }
@@ -243,13 +255,25 @@ button#active {
 }
 
 .sect-header {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   /* margin-right: 2vw; */
   font-family: subheader-font;
   font-weight: 500;
-  color:var(--opaque)
+  color:var(--opaque);
+  margin-right: 2rem;
 }
+
+.sect-header2 {
+  font-size: 1.75rem;
+  text-align: center;
+  /* margin-right: 2vw; */
+  font-family: subheader-font;
+  font-weight: 500;
+  color:var(--opaque);
+  margin-right: 2rem;
+}
+
 
 .sect-body {
   text-align: center;

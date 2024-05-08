@@ -46,9 +46,9 @@ function Projects() {
             <div className='row justify-content-start' style={{marginRight:'2rem'}}>
                 <div className='col-md-8'></div>
                 <div className='col-6 col-md-4' style={{width: "100vw"}}>
-                    <div className='sect-header row'>
+                    <div className='sect-header2 row '>
                         <div className='col'></div>
-                        <div className='col ' >Web Development</div>
+                        <div className='col variable-header' >Web Development</div>
                         
                     </div>
                     <div className="row justify-content-start">
@@ -80,16 +80,16 @@ function Projects() {
                                </Carousel.Item>
                             ))}
                             </Carousel> 
-                            <div className='row' style={{marginBottom:'.5rem'}}>
-                                <div className='col'>
+                            {/* <div className='row' style={{marginBottom:'.5rem'}}> */}
+                                {/* <div className='col'> */}
 
                             <a href={project[0].web} target="_blank" rel="noreferrer" className='custom-button unactive' style={{textShadow:'none'}}>Visit</a>
-                                </div>
-                                <div className='col'>
+                                {/* </div> */}
+                                {/* <div className='col'> */}
 
                             <a href={project[0].github} target="_blank" rel="noreferrer" className='custom-button unactive' style={{textShadow:'none'}}>Dig In</a>
-                                </div>
-                            </div>
+                                {/* </div> */}
+                            {/* </div> */}
                             </div>
                         </div>
                       
